@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <script src="js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    
+    <!-- navbar starts -->
+
+   <section>
+    <nav class="navbar navbar-expand-md navbar-light bg-light shadow">
+        <div class="container-fluid">
+        
+        <!-- navbar-brand(a) -->
+        <a href="project1.html" class="navbar-brand"><span
+        style="color: gold; font-weight: 900; text-decoration: overline;">King's</span> Collection</a>
+        
+        <!-- toggler button(changes by collapsing) -->
+        <button type="button" class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- navbar-nav(navigation) -->
+        <div class="collapse navbar-collapse" id="navigation">
+        
+        <ul class="navbar-nav me-auto">
+        
+        <li class="nav-item">
+        <a href="" class="nav-link active">Home</a>
+        </li>
+        
+        
+        <!-- nav-items with dropdowns -->
+        <li class="nav-item dropdown">
+        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="dropDown">Products</a>
+        
+        <ul class="dropdown-menu">
+        <li> <a href="#" class="dropdown-item"> School Bags </a> </li>
+        
+        <li> <a href="#" class="dropdown-item"> Laptop Bags </a> </li>
+        
+        <li>
+        <hr class="dropdown-divider">
+        </li>
+        
+        
+        <li> <a href="#" class="dropdown-item"> PlayStation Bags </a> </li>
+        
+        <li> <a href="#" class="dropdown-item"> Camera Bags </a> </li>
+        
+        
+        
+        </ul>
+        </li>
+        
+        <li class="nav-item">
+        <a href="" class="nav-link disabled"> Coming Soon </a>
+        </li>
+        
+        </ul>
+        
+        <div class="d-flex">
+        <input type="search" placeholder="Search" class="form-control me-2">
+        <button class="btn btn-outline-success">Search</button>
+        </div>
+        
+        <!-- user profile -->
+        
+        <li class="nav-item navbar-nav nav-link dropdown">
+        <a href="" class="nav-link dropdown-toggle" data-bs-toggle="dropdown" id="dropDown"> <img
+        src="images/team1.jpg" alt="" width="50px" height="50px" class="rounded-pill"> Admin </a>
+        
+        
+        <ul class="dropdown-menu">
+            <li> <a href="tabs.html" class="dropdown-item"> My profile</a> </li>
+            <li> <a href="#" class="dropdown-item"> Logout</a> </li>
+        
+        <li> <a href="#" class="dropdown-item"> Profile </a> </li>
+        
+        <li>
+        <hr class="dropdown-divider">
+        </li>
+        
+        
+        <li> <a href="#" class="dropdown-item"> Register </a> </li>
+        
+        <li> <a href="#" class="dropdown-item"> Login </a> </li>
+        
+        
+        
+        </ul>
+        </li>
+        
+        
+        </div>
+        
+        
+        </div>
+        
+        </nav>
+   </section>
+    <!-- navbar ends -->
+
+    <!-- sidebar and tabs -->
+    <section class="row ">
+        <!-- sidebar 3 grids  -->
+
+        <div class="col-md-3">
+
+            <div class="container">
+
+                <div class="card shadow" id="sidebar">
+
+                    <!-- accordions  -->
+
+                    <h3 class="text-center text-warning" style="text-decoration: underline;">Quick Links</h3>
+                    <div class="accordion" id="myAccordion">
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button type="button"  class="accordion-button" data-bs-toggle="collapse" data-bs-target="#accessories">Accesories Bags</button>
+
+
+                            </h5>
+
+                            <div id="accessories" class="collapse accordion-collapse" data-bs-parent="#myAccorion">
+                                <div class="accordion-body">
+                                    <a href="#" class="nav-link">Camera Bags</a>
+
+                                    <a href="#" class="nav-link">Laptop Bags</a>
+                                    <a href="#" class="nav-link">PlayStation Bags</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button type="button"  class="accordion-button" data-bs-toggle="collapse" data-bs-target="#fashionbags">Fashion Bags</button>
+
+
+                            </h5>
+
+                            <div id="fashionbags" class="collapse accordion-collapse" data-bs-parent="#myAccorion">
+                                <div class="accordion-body">
+                                    <a href="#" class="nav-link">Stylish Bags</a>
+
+                                    <a href="#" class="nav-link">Luxury Bags</a>
+                                    <a href="#" class="nav-link">Shoulder Bags</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                        <div class="accordion-item">
+                            <h5 class="accordion-header">
+                                <button type="button"  class="accordion-button" data-bs-toggle="collapse" data-bs-target="#travel">Travel Bags</button>
+
+
+                            </h5>
+
+                            <div id="travel" class="collapse accordion-collapse" data-bs-parent="#myAccorion">
+                                <div class="accordion-body">
+                                    <a href="#" class="nav-link">Laguage Bags</a>
+
+                                    <a href="#" class="nav-link">Trolley Bags</a>
+                                    <a href="#" class="nav-link">Lever Bags</a>
+
+                                </div>
+
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <!-- accordion ends  -->
+                </div>
+    
+            </div>
+        </div>
+
+        <!-- tabs -->
+
+        <div class="col-md-9">
+            <div class="card shadow">
+                <div class="card-body">
+                    <!-- tabs starts here  -->
+
+                    <ul class="nav nav-tabs">
+
+                        <li class="nav-item">
+                            <a href="tabs.html" class="nav-link ">Overview</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link ">Edit Profile</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="" class="nav-link ">Settings</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="change.html" class="nav-link active ">Change Password</a>
+                        </li>
+                    </ul>
+                    <!-- tab ends  -->
+                    <div>
+                       <form action="">
+                        <div class="d-flex mt-4">
+                            <label for="">Current Password</label>
+                            <input type="password" name="mypassoword" id="" class="form-control">
+
+                        </div>
+                        <div class="d-flex mt-4">
+                            <label for="">New Password</label>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                            <input type="password" name="mypassoword" id="" class="form-control">
+
+                        </div>
+                        <div class="d-flex mt-4">
+                            <label for="">Confirm  Password</label>
+                            <input type="password" name="mypassoword" id="" class="form-control">
+
+
+                        </div>
+                        <input type="submit" value="Update Password" class="btn btn-outline-primary mt-4">
+                       </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modal</title>
+    <!-- css -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+
+    <!-- js  -->
+    <script src="js/bootstrap.js"></script>
+
+</head>
+<body class="bg-warning">
+    <!-- Modal  -->
+    <!-- Components: modal-header (title, button), modal-body(add anything), modal-footer(buttons) -->
+    <!-- toggle: changing the state of a component  -->
+    <!-- target: used to connect Components based on the id(#) -->
+
+    <button class="btn btn-success" data-bs-toggle="modal" data-bs-target="#id">Pay with Mpesa</button>
+
+    <!-- modal  -->
+    <div class="modal fade" id="id">
+        <div class="modal-dialog">
+
+            <div class="modal-content">
+
+                <!-- header  -->
+                <div class="modal-header">
+                    <h5 class="modal-title text-success">Lipa na Mpesa</h5>
+                    <button type="button" class="btn btn-close" data-bs-dismiss="modal"></button>
+                </div>
+
+                <!-- modal-body  -->
+                <div class="modal-body">
+                    <form action="">
+                        <input type="text" name="invoice" id="invoice" placeholder="Enter the Invoice Number" class="form-control">
+                        <br>
+                        <input type="tel" name="phone" id="phone" placeholder="+2547XXXXX" class="form-control">
+                        <br>
+                        <input type="number" name="amount" id="amount" placeholder="Enter the Amount in Kshs" class="form-control">
+                    </form>
+                </div>
+
+                <!-- modal-footer  -->
+                <div class="modal-footer">
+                    <button class="btn btn-danger" data-bs-dismiss="modal"> Cancel</button>
+                    <button class="btn btn-success">Proceed to Pay</button>
+                    
+                </div>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
